@@ -1,16 +1,41 @@
-# React + Vite
+# EduBot AI — Asistente Académico 🎓
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicación web interactiva desarrollada con **React + Vite** e integrada con la **API de Google Gemini**, diseñada para brindar soporte académico a estudiantes mediante resúmenes de temas, aclaración de dudas y síntesis de conceptos.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Características Principales
 
-## React Compiler
+- **Integración con Gemini API:** Comunicación directa con los modelos de IA de Google Gemini para generación de respuestas contextuales.
+- **Gestión Local de API Key:** Configuración sencilla de la clave API almacenada localmente en `localStorage` del navegador.
+- **Estructura React + Vite:** Desarrollo ágil, modular y optimizado con renderizado rápido.
+- **Diseño Estilizado (Tailwind CSS):** Interfaz oscura moderna y adaptativa (responsive) con iconografía de `lucide-react`.
+- **Despliegue Automático:** Configuración lista para publicación en GitHub Pages mediante `gh-pages`.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## Tecnologías Utilizadas
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Frontend:** React 18 / Vite
+- **Estilos:** Tailwind CSS / PostCSS
+- **Iconos:** Lucide React
+- **IA Provider:** Google Gemini API (`generativelanguage.googleapis.com`)
+- **Control de Versiones y Hosting:** Git, GitHub, GitHub Pages
+
+---
+
+## Estructura del Proyecto
+
+```text
+PRACTICA2/
+├── .claude/              # Instrucciones y contexto para la asistencia con Claude CLI
+│   └── CLAUDE.md
+├── public/               # Archivos estáticos
+├── src/
+│   ├── App.jsx           # Componente principal con la lógica del chat y Gemini API
+│   ├── index.css         # Importación de estilos base de Tailwind
+│   └── main.jsx          # Punto de entrada de React
+├── index.html            # Plantilla HTML principal
+├── package.json          # Configuración de dependencias y scripts
+├── vite.config.js        # Configuración del entorno Vite y rutas de despliegue
+└── README.md             # Documentación del proyecto
